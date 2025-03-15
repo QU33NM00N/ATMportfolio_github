@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Space Exploration Forum</title>
+  <link rel="stylesheet" href="space.css">
+</head>
+<body>
+  <!-- Main Container -->
+  <div class="space-window">
+    <!-- Header -->
+    <header class="space-header">
+      <div class="logo">
+        <img src="https://news.uchicago.edu/sites/default/files/images/2022-10/sgr%20A%2A%20ESO%20and%20M.%20Kornmesser%20690.jpg" alt="Space Exploration Forum">
+      </div>
+      <nav class="space-nav">
+        <ul>
+          <li><a href="#" onclick="loadPage('home')">Home</a></li>
+          <li><a href="#" onclick="loadPage('missions')">Missions</a></li>
+          <li><a href="#" onclick="loadPage('forum')">Forum</a></li>
+          <li><a href="#" onclick="loadPage('about')">About</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="space-main-content">
+      <!-- Sidebar (Left Column) -->
+      <aside class="space-sidebar">
+        <h3>Exploration Logs</h3>
+        <ul>
+          <li><a href="#" onclick="loadPage('mars-mission')">Mars Mission Logs</a></li>
+          <li><a href="#" onclick="loadPage('black-hole')">Black Hole Encounters</a></li>
+          <li><a href="#" onclick="loadPage('alien-signals')">Alien Signals</a></li>
+          <li><a href="#" onclick="loadPage('planet-x')">Planet X</a></li>
+        </ul>
+      </aside>
+
+      <!-- Main Content (Right Column) -->
+      <section class="space-article" id="dynamic-content">
+        <!-- Default Content -->
+        <h1>The Void Calls</h1>
+        <p>"The void calls to me and tells me to come home."</p>
+        <img src="https://images.theconversation.com/files/64127/original/2mdvqkw8-1415620078.jpg?ixlib=rb-4.1.0&q=45&auto=format&w=1356&h=668&fit=crop" alt="Outer Space" class="space-glitch-effect" />
+        <blockquote class="space-quote">
+          "Time is a flat circle. The question is not where, the question is when." — Interstellar
+        </blockquote>
+        <p class="hidden-text">I hear whispers from the edge of the universe. The message is clear, I must go, but I often wonder if it will be too late when I finally do...</p>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="space-footer">
+      <p>&copy; Space Exploration Forum. All rights reserved.</p>
+      <p class="space-quote">"The Earth is the cradle of humanity, but mankind cannot stay in the cradle forever." - Konstantin Tsiolkovsky</p>
+    </footer>
+  </div>
+
+  <script src="space-script.js"></script>
+</body>
+</html>

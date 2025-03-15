@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>~xXSceneQueenXx~'s MySpace</title>
+  <link rel="stylesheet" href="style.css" />
+   
+</head>
+<body>
+  <!-- MySpace Profile -->
+  <div class="myspace-profile">
+    <!-- Left Column -->
+    <div class="left-column">
+      <!-- Profile Header -->
+      <div class="profile-header">
+        <h1>~xXMoonth3MoonXx~</h1>
+        <p class="status">RAWR X3</p>
+      </div>
+
+      <!-- Profile Picture -->
+      <div class="profile-pic">
+        <img> <a href="https://www.glitter-graphics.com"><img src="http://dl8.glitter-graphics.net/pub/3115/3115178s4jgbjw23x.gif" width=75 height=67 border=0></a>
+        <div class="glitter-frame"></div>
+      </div>
+
+      <!-- About Me -->
+      <div class="about-me">
+        <h2>About Me</h2>
+        <p>
+          Hi, I'm ~xXMoonth3MoonXx~! Welcome to myspace, no pun intended >:3
+        </p>
+      </div>
+
+      <!-- Interests -->
+      <div class="interests">
+        <h2>Interests</h2>
+        <ul>
+          <li>Neon everything</li>
+          <li>Scene hair</li>
+          <li>Glitter</li>
+          <li>My Little Pony</li>
+          <li>Fursonas</li>
+        </ul>
+      </div>
+
+      <!-- Top 8 Friends -->
+      <div class="top-friends">
+        <h2>Top 8 Friends -> Only 1 :3</h2>
+        <div class="friends-grid">
+          <div class="friend">
+            <a href="assets/imgs/trixie lulamoon pfp.jpeg"><img src="http://dl2.glitter-graphics.net/pub/192/192642hcw7akebic.gif" width=100 height=81 border=0></a>
+            <span>~xXB4RBI3Xx~</span>
+          </div>
+          <!-- Add more friends here -->
+        </div>
+      </div>
+    </div>
+
+    <!-- Right Column -->
+    <div class="right-column">
+      <br>
+      <br>
+      <!-- Twilight Quote -->
+      <div class="twilight-quote">
+        <p>“I cannot make you understand. I cannot make anyone understand what is happening inside me. I cannot even explain it to myself.”</p>
+        <p>- Franz Kafka, <em>The Metamorphosis</em></p>
+      </div>
+
+      <!-- My Little Pony Reference -->
+      <div class="mlp-reference">
+        <h2>Silly Filly Moment</h2>
+        <a href="https://www.glitter-graphics.com"><img src="http://dl7.glitter-graphics.net/pub/3144/3144027qoy7wdlbo6.gif" width=106 height=96 border=0></a>
+      </div>
+
+      <!-- Furry Reference -->
+      <div class="furry-reference">
+        <h2>Blehh life stuff</h2>
+        <p>What everything feels like x3</p>
+        <a href="https://www.glitter-graphics.com"><img src="http://dl6.glitter-graphics.net/pub/139/139506a4ffqyxx72.gif" width=160 height=120 border=0></a><br><a href="https://www.glitter-graphics.com" target=_blank></a>
+      </div>
+
+      <!-- Guestbook -->
+      <div class="guestbook">
+        <h2>Guestbook</h2>
+        <textarea id="guestbook-comment" placeholder="Leave a comment..."></textarea>
+        <button onclick="addComment()">Submit</button>
+        <div id="guestbook-comments"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- comment add -->
+  <script>
+    function addComment() {
+      const comment = document.getElementById('guestbook-comment').value;
+      if (comment) {
+        const commentDiv = document.createElement('div');
+        commentDiv.className = 'comment';
+        commentDiv.textContent = comment;
+        document.getElementById('guestbook-comments').appendChild(commentDiv);
+        document.getElementById('guestbook-comment').value = '';
+      }
+    }
+  </script>
+</body>
+</html>

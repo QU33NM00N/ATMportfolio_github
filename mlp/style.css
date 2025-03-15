@@ -1,0 +1,187 @@
+/* General Styling */
+body {
+    margin: 0;
+    font-family: "Comic Sans MS", cursive;
+    background-color: #ffe6f9;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+  
+  /* Header */
+  .mlp-wiki-header {
+    background-color: #ff9ad8;
+    padding: 10px;
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    border-bottom: 3px solid #ff70c8;
+  }
+  
+  .mlp-nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .mlp-nav li {
+    margin: 0 15px;
+  }
+  
+  .mlp-nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+  }
+  
+  /* Main Content */
+  .mlp-main-content {
+    display: flex;
+    flex: 1;
+    padding: 20px;
+    gap: 20px;
+  }
+  
+  .mlp-sidebar {
+    background-color: #ffe6f9;
+    padding: 15px;
+    border-right: 3px solid #ff70c8;
+    width: 200px;
+  }
+  
+  .mlp-sidebar h3 {
+    color: #ff70c8;
+    font-size: 18px;
+  }
+  
+  .mlp-article {
+    flex: 1;
+    padding: 20px;
+    animation: subtle-glitch 10s infinite;
+  }
+  
+  @keyframes subtle-glitch {
+    0%, 100% {
+      transform: none;
+    }
+    50% {
+      transform: skewX(1deg);
+    }
+  }
+  
+  /* Hidden Text */
+  .hidden-text {
+    color: transparent;
+    animation: reveal 10s infinite;
+  }
+  
+  @keyframes reveal {
+    0%, 90% {
+      color: transparent;
+    }
+    91%, 100% {
+      color: #ff70c8;
+    }
+  }
+  
+  /* Kafka Quote */
+  .kafka-quote {
+    font-size: 14px;
+    font-style: italic;
+    color: #ff70c8;
+    margin-top: 20px;
+  }
+  
+  /* Footer */
+  .mlp-footer {
+    background-color: #ff9ad8;
+    text-align: center;
+    padding: 10px;
+    color: white;
+    margin-top: auto;
+  }
+
+  /* Adding a CSS class for the hidden text */
+  .hidden-text {
+    display: none;
+  }
+
+  .kafka-quote {
+    font-style: italic;
+    font-size: 1.2rem;
+    color: #666;
+  }
+
+  /* Glitch effect */
+  .glitch-effect {
+    animation: glitch 1s infinite;
+    position: relative;
+  }
+
+  @keyframes glitch {
+    0% {
+      transform: translateX(0);
+    }
+    10% {
+      transform: translateX(-5px);
+    }
+    20% {
+      transform: translateX(5px);
+    }
+    30% {
+      transform: translateX(-5px);
+    }
+    40% {
+      transform: translateX(5px);
+    }
+    50% {
+      transform: translateX(-5px);
+    }
+    60% {
+      transform: translateX(5px);
+    }
+    70% {
+      transform: translateX(-5px);
+    }
+    80% {
+      transform: translateX(5px);
+    }
+    90% {
+      transform: translateX(-5px);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+
+  /* Hidden morse/cipher messages */
+  .cipher-text {
+    color: #ff70c8;
+    font-size: 1.2rem;
+    font-family: monospace;
+  }
+
+  .dead-link {
+    color: #999;
+    text-decoration: line-through;
+  }
+
+  /* Kafka-inspired hidden messages */
+  .kafka-hidden {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    font-size: 12px;
+    color: #ff70c8;
+    opacity: 0.8;
+    animation: fade-out 5s forwards;
+  }
+
+  @keyframes fade-out {
+    0% { opacity: 0.8; }
+    100% { opacity: 0; }
+  }

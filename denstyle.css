@@ -1,0 +1,201 @@
+body {
+  margin: 0;
+  font-family: 'Tahoma', sans-serif;
+  background-image: url('https://www.newegg.com/insider/wp-content/uploads/2014/04/windows_xp_bliss-wide.jpg'); /* Windows XP Bliss wallpaper */
+  background-size: cover;
+  background-position: center;
+  color: #000;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Desktop Icons */
+.desktop {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 20px;
+}
+
+.icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+.icon img {
+  width: 48px;
+  height: 48px;
+}
+
+.icon span {
+  margin-top: 5px;
+  color: #fff;
+  text-shadow: 1px 1px 2px #000;
+}
+
+/* Taskbar */
+.taskbar {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 40px;
+  background-color: #c0c0c0;
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+}
+
+.start-button {
+  background-color: #008080;
+  color: #fff;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+/* Popup Windows */
+.window {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 600px;
+  height: 400px;
+  background-color: #fff;
+  border: 2px solid #000;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+.title-bar {
+  background-color: #008080;
+  color: #fff;
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.close-button {
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+.content {
+  padding: 10px;
+  height: calc(100% - 30px);
+}
+
+iframe {
+  width: 100%;
+  height: 95%;
+  border: none;
+}
+
+/* Start Menu */
+.start-menu {
+  display: none;
+  position: absolute;
+  bottom: 40px;
+  left: 0;
+  background-color: #c0c0c0;
+  border: 2px solid #000;
+  padding: 10px;
+  z-index: 1000;
+}
+
+.start-menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.start-menu li {
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.start-menu li:hover {
+  background-color: #008080;
+  color: #fff;
+}
+
+.hidden-icon {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  opacity: 0.2;
+  transition: opacity 0.3s;
+}
+
+.hidden-icon:hover {
+  opacity: 1;
+}
+
+/* CRT Monitor Effect */
+.crt-effect {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: repeating-linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.15),
+    rgba(0, 0, 0, 0.15) 1px,
+    transparent 1px,
+    transparent 2px
+  );
+  pointer-events: none;
+  z-index: 9999;
+}
+
+/* Music Player */
+.music-player {
+  position: fixed;
+  bottom: 60px;
+  right: 10px;
+  background: #c0c0c0;
+  padding: 5px;
+  border: 2px solid #000;
+  z-index: 1000;
+}
+
+
+/* Error Popup */
+#error-popup {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  background: #c0c0c0;
+  border: 2px solid #000;
+  padding: 10px;
+}
+
+/* Retro Cursor */
+body {
+  cursor: url('assets/8-paw-cursor.png'), auto;
+}
+
+.notification {
+  position: fixed;
+  bottom: 60px;
+  right: 10px;
+  background: #c0c0c0;
+  padding: 10px;
+  border: 2px solid #000;
+  display: none;
+}
+

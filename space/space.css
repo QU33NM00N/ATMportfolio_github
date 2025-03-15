@@ -1,0 +1,154 @@
+/* Space Theme Styling */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+  }
+  
+  body {
+    background: #0a0a0a; /* Deep black background */
+    color: #fff;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  .space-window {
+    max-width: 1200px;
+    margin: 0 auto;
+    background: #1c1c1c; /* Dark grey background */
+    border-radius: 15px;
+    padding: 20px;
+  }
+  
+  .space-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid #e65100; /* Amber orange border */
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .space-header .logo img {
+    height: 80px;
+    width: auto;
+  }
+  
+  .space-nav ul {
+    display: flex;
+    list-style: none;
+  }
+  
+  .space-nav li {
+    margin-right: 20px;
+  }
+  
+  .space-nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+  }
+  
+  .space-nav a:hover {
+    color: #e65100; /* Amber orange on hover */
+  }
+  
+  .space-main-content {
+    display: flex;
+  }
+  
+  .space-sidebar {
+    width: 250px;
+    background: #121212; /* Darker grey sidebar */
+    padding: 15px;
+    border-radius: 10px;
+    margin-right: 20px;
+  }
+  
+  .space-sidebar h3 {
+    font-size: 20px;
+    color: #e65100; /* Amber for header */
+    margin-bottom: 10px;
+  }
+  
+  .space-sidebar ul {
+    list-style: none;
+  }
+  
+  .space-sidebar li {
+    margin-bottom: 10px;
+  }
+  
+  .space-sidebar a {
+    text-decoration: none;
+    color: #ddd;
+    transition: color 0.3s ease;
+  }
+  
+  .space-sidebar a:hover {
+    color: #e65100; /* Amber orange on hover */
+  }
+  
+  .space-article {
+    flex-grow: 1;
+    color: #fff;
+    background: linear-gradient(45deg, #212121, #121212);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  .space-article h1 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    text-shadow: 0 0 10px #e65100; /* Glowing text shadow */
+  }
+  
+  .space-article p {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+  }
+  
+  .space-article .space-glitch-effect {
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 20px;
+    box-shadow: 0 0 15px #e65100; /* Glowing image border */
+  }
+  
+  .space-article blockquote {
+    font-style: italic;
+    color: #ddd;
+    border-left: 5px solid #e65100;
+    padding-left: 15px;
+    margin-top: 20px;
+  }
+  
+  .space-article .hidden-text {
+    font-size: 0.9rem;
+    color: #bbb;
+    font-style: italic;
+  }
+  
+  .space-footer {
+    margin-top: 20px;
+    text-align: center;
+    padding-top: 10px;
+    border-top: 2px solid #e65100;
+  }
+  
+  .space-footer p {
+    font-size: 1rem;
+    color: #ddd;
+  }
+  
+  .space-footer .space-quote {
+    font-size: 1.1rem;
+    color: #e65100;
+    margin-top: 10px;
+  }
+  
